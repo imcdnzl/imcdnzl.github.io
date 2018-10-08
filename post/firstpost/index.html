@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      First post - Ian McDonald&#39;s blog
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           Ian McDonald&#39;s blog
+				
+			</a>
+		</h1>
+		<h2 class="blog-description">Random thoughts from an autistic Kiwi</h2>
+	</div>
+
+	<div class="nav">
+    
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      
+      <h2 class="post-title">First post</h2>
+      <section class="post-meta">
+        <time class="post-date">October 08, 2018</time>
+      </section>
+    </header>
+    <section class="post-content">
+      <p>Over the years I&rsquo;ve had a number of blogs and published contents in different places - the most recent being at <a href="http://blog.next-genit.co.uk/">http://blog.next-genit.co.uk/</a>. <em>So why create a new blog now?</em> Well hopefully this post will explain a bit more!</p>
+
+<p>The main reason was because I started a new role (CTO in residence at <a href="https://startups.microsoft.com/">Microsoft for Startups</a>), along with wanting to talk more about my autism, and I thought I&rsquo;d better do a blog a bit more technical than just using something like Blogger or pre-packaged Wordpress. They are great, and would have been easier, but it&rsquo;s good for me to learn and play. Even though I&rsquo;ve led large AWS and Azure projects, teams of software developers and done a few bits and pieces myself I&rsquo;d lost a bit of the edge since my last lot of serious coding which was on the Linux kernel when I did my <a href="https://researchcommons.waikato.ac.nz/handle/10289/8320">PhD</a>.</p>
+
+<p>So I went off and had a look at blogging platforms and asked people on Twitter what they thought also. I have a natural bias to trying to do things higher in the stack where possible as that&rsquo;s inherently less work to keep running, and far easier to keep secure. So the first decision was made - go for something with static HTML, and not a server. My choice was then between <a href="https://pages.github.com/">GitHub pages</a> and <a href="https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website">static website hosting on Azure storage</a>. I could have done with either, but went with GitHub due to the upcoming acquisition (still subject to final close).</p>
+
+<p>So then how to write the content? I&rsquo;m absolutely not going to write HTML / Javascript by hand - nobody should be doing that these days. I went and looked at the two leading opensource contenders in <a href="https://gohugo.io/">Hugo</a> and <a href="https://jekyllrb.com/">Jekyll</a>. To be honest I could have gone with either, and Jekyll would have been the easier choice as it was already integrated with GitHub pages. In the end I went with Hugo - there&rsquo;s nothing wrong at all with Jekyll / Ruby, but like most tech people I&rsquo;m attracted to new shiny things and Hugo is newer and written in Go. Don&rsquo;t worry - you don&rsquo;t need to install Go as I found out after installing it and getting it all working&hellip;</p>
+
+<p>So then the fun began - I thought that I could get it all going in one night after work and I was wrong! Not because it&rsquo;s hard, but because I was too rusty and also I have a hard time staying focussed on tasks, along with a busy work schedule. I think the focus thing is quite related to my autism (I&rsquo;ve seen a recent debate questiong whether all high funcioning autism people have ADHD). The other thing that slowed me down is that I want to try and understand <strong>EVERYTHING</strong> that I do. This might be because I started programming using machine code (not assembler - go check the difference) and have also done basic electronics and chip design along with coding drivers / firwmare / operating systems.</p>
+
+<p>I did then try and write my own theme to do blog publishing, which I&rsquo;m sure I could do if I had enough time but then realised I&rsquo;d be better off using one already written. <a href="https://github.com/nirocfz/arabica">This</a> is the one that I went with in the end.</p>
+
+<p>One little side note about setting things up - when I was testing Hugo on Windows Subsytem for Linux (WSL) I was trying to work out what IP address I should put into the browser to view, like I need to do with virtual machines. It made sense afterward to realise of course that it is localhost as it&rsquo;s not a virtual machine. This wasn&rsquo;t well documented but now that Microsoft documents are open source I just made a pull request against <a href="https://docs.microsoft.com/en-us/windows/wsl/faq">this page</a>. I still love that I can do that!!</p>
+
+<p>One of the joys on blogging on git and opensource is that you can follow along too - you can even see in advance what I&rsquo;m writing if you really want at my <a href="https://github.com/imcdnzl/my-blog">repo</a>. I&rsquo;m also dual publishing on Medium so you can check it out <a href="https://medium.com/@imcdnzl">here</a>, or if you&rsquo;re reading on Medium I&rsquo;m posting firstly <a href="http://blog.imcdonald.com/">over here</a>. I do intend, at some time, on setting up your own blog using Hugo / GitHub as I didn&rsquo;t find the instructions around totally simple.</p>
+
+<p>So you&rsquo;ve got almost to the end - thanks for reading this far. I mentioned I&rsquo;d also be talking about autism and I will but I&rsquo;ll save that for future posts. In short I have high functioning autism, which is also known as Aspergers. See you next time!!</p>
+
+    </section>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  <section class="twitter"><a class="icon-twitter" href="https://twitter.com/imcdnzl"> imcdnzl</a></section>
+  
+  <section class="copyright">&copy; 2018 Ian McDonald&#39;s blog</section>
+  <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+    </body>
+</html>
