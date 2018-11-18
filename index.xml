@@ -6,10 +6,20 @@
     <description>Recent content on Ian McDonald&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 08 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://blog.imcdonald.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tech stack for your new startup</title>
+      <link>http://blog.imcdonald.com/post/startuptech/</link>
+      <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.imcdonald.com/post/startuptech/</guid>
+      <description>You&amp;rsquo;ve got a great idea for your startup, and a great team, but how do you get started with Azure to build this solution? So you go to the Azure portal or have a look at the list of the Azure services and there&amp;rsquo;s a lot of services there. Azure can solve all the world&amp;rsquo;s problems but you just want to get started so what to do?
+First thing I&amp;rsquo;d say is to keep it as simple as possible.</description>
+    </item>
     
     <item>
       <title>First post</title>

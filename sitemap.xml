@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.imcdonald.com/post/startuptech/</loc>
+    <lastmod>2018-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.imcdonald.com/post/firstpost/</loc>
     <lastmod>2018-10-08T00:00:00+00:00</lastmod>
   </url>
@@ -14,13 +19,13 @@
   
   <url>
     <loc>http://blog.imcdonald.com/</loc>
-    <lastmod>2018-10-08T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.imcdonald.com/post/</loc>
-    <lastmod>2018-10-08T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

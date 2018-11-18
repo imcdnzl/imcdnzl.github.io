@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      Tech stack for your new startup - Ian McDonald&#39;s blog
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           Ian McDonald&#39;s blog
+				
+			</a>
+		</h1>
+		<h2 class="blog-description">Random thoughts from an autistic Kiwi</h2>
+	</div>
+
+	<div class="nav">
+    
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      
+      <h2 class="post-title">Tech stack for your new startup</h2>
+      <section class="post-meta">
+        <time class="post-date">November 18, 2018</time>
+      </section>
+    </header>
+    <section class="post-content">
+      
+
+<p><img src="/images/other-computer-azure.png" alt="other computer is azure" /></p>
+
+<p>You&rsquo;ve got a great idea for your startup, and a great team, but how do you get started with Azure to build this solution? So you go to the Azure portal or have a look at the list of the <a href="https://azure.microsoft.com/en-gb/services/">Azure services</a> and there&rsquo;s a <em>lot</em> of services there. Azure can solve all the world&rsquo;s problems but you just want to get started so what to do?</p>
+
+<p>First thing I&rsquo;d say is to keep it as simple as possible. A good developer is a lazy developer. There&rsquo;s no need to reinvent things that have been solved by others, when you can focus on building out your good idea instead. Friends don&rsquo;t let friends build servers.</p>
+
+<p>So if you&rsquo;re not building servers, where do you start? I&rsquo;d recommend going with what&rsquo;s called a serverless approach. I could go into a fair bit more depth but it&rsquo;s explained well over <a href="https://azure.microsoft.com/en-gb/solutions/serverless/">here</a> with lots of pretty pictures (and who doesn&rsquo;t like pretty pictures?). In particular I&rsquo;d recommend starting with <a href="https://docs.microsoft.com/en-us/azure/azure-functions/">Azure Functions</a>. The way that I look at code is that it&rsquo;s nearly always responding to something - whether it&rsquo;s a user uploading a file, a regular time interval, an update to a data record etc. All you want to do is then write the code needed to respond to that event, and that&rsquo;s what serverless code allows you to do. Don&rsquo;t worry that you have to learn a new language - you can still go and use the ones you love - it&rsquo;s a different approach, not a different language.</p>
+
+<p>Now that you know about Azure Functions you&rsquo;re going to want somewhere to store your data but isn&rsquo;t building a database a pain? Just like I told you not to build servers, don&rsquo;t go and build your own databases either. So Azure has an offering called <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/introduction">Azure Cosmos DB</a> that does a lot of cool things. Of course it allows global reads in many regions, but it also allows global writes in many regions at the same time which is kind of cool when your startup is aiming for world domination. You also don&rsquo;t have to abandon your existing knowledge or code as it&rsquo;s SQL, MongoDB, Apache Cassandra and Gremlin compatible amongst others.</p>
+
+<p>Of course you can link Functions and Cosmos DB together - here&rsquo;s a <a href="https://docs.microsoft.com/en-gb/azure/azure-functions/functions-bindings-cosmosdb-v2">quick quide</a> using the SQL API to get you started.</p>
+
+<p>Now I&rsquo;m presuming that you&rsquo;re wanting to use a bit of AI in your application as it adds value to your <del>share price</del> application but you&rsquo;ve also heard how hard it can be. You might even be a bit like me and started on some of <a href="https://www.coursera.org/instructor/andrewng">Andew Ng&rsquo;s great courses</a> and never quite finished them. Never fear - Microsoft believes in democratising AI so we&rsquo;ve made it easy for you. Go over to <a href="https://azure.microsoft.com/en-us/services/cognitive-services/">Azure Cognitive Services</a> and you&rsquo;ll see lots of prebuilt services that you can add to your application in minutes - whether it&rsquo;s to understand intent or recognising objects you&rsquo;ll find something that really helps your startup.</p>
+
+<h2 id="next-steps">Next steps</h2>
+
+<p>So now that you&rsquo;ve got a high level understanding of the technology how do you learn in more detail? <a href="https://microsoft.com/learn">Microsoft Learn</a> is a great place to start - it&rsquo;s a new training site that Microsoft has built that allows you to learn while actually using Azure without having to pay a penny. What&rsquo;s more you can get cool badges, and who doesn&rsquo;t want that? Microsoft Learn is built on top of <a href="http://docs.microsoft.com">http://docs.microsoft.com</a> where you can also see many code examples, and even contribute back to the documentation as it&rsquo;s all hosted on GitHub!</p>
+
+<p>Now I know startups don&rsquo;t always have a lot of money - so not only is training free but you can also start with Azure for free at <a href="https://azure.com/free/">https://azure.com/free/</a>.</p>
+
+<h2 id="and-a-little-bit-more">And a little bit more</h2>
+
+<p>Once you&rsquo;ve got the basics working, what next? There&rsquo;s a few things that you might want to learn about to help you:</p>
+
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-monitoring">Monitor Azure Functions</a> - so you can check performance, errors etc</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/advisor/advisor-overview">Azure Advisor</a> - this will give you a few tips, including how to save money</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-intro">Security Center</a> - you&rsquo;re a great coder I know, but never hurts to check you&rsquo;ve set things up properly</li>
+</ul>
+
+<p>And here&rsquo;s a few more as you grow your startup:</p>
+
+<ul>
+<li><a href="https://azure.microsoft.com/en-us/overview/containers/">Containers</a> - whether it&rsquo;s Kubernetes or needing a container registry there are plenty of options</li>
+<li><a href="https://azure.microsoft.com/en-us/blog/a-closer-look-at-azure-data-lake-storage-gen2/">Azure Data Lake</a> - now with Azure your object storage and big data processing can all be in the same place</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/app-service/">Azure App Service</a> - like I said earlier, who wants to run servers when you can have hosted environments?</li>
+<li><a href="https://azure.microsoft.com/en-us/solutions/devops/">Azure DevOps</a> - you don&rsquo;t want to be doing everything by hand do you?</li>
+</ul>
+
+<p>Now go out and then build something great!</p>
+
+    </section>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  <section class="twitter"><a class="icon-twitter" href="https://twitter.com/imcdnzl"> imcdnzl</a></section>
+  
+  <section class="copyright">&copy; 2018 Ian McDonald&#39;s blog</section>
+  <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+    </body>
+</html>
